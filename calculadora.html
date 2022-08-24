@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora</title>
+
+</head>
+<body>
+    <h1>🤓 Calculadora 🤓</h1>
+    Digite um número <br />
+    <input id="numero1" type="number" /> <br />
+    Digite outro número <br />
+    <input id="numero2" type="number"> <br />
+    <button onclick="soma()">Soma</button>
+    <button onclick="subtracao()">Subtração</button>
+    <button onclick="multiplicacao()">Multiplicação</button>
+    <button onclick="divisao()">Divisão</button>
+    <br /><br />
+    O resultado é: <span></span>
+    <br /><br />
+    <script>
+        var numero1 = document.querySelector('#numero1')
+        var numero2 = document.querySelector('#numero2')
+        var valor = document.querySelector('span')
+
+        function soma() {
+            valor.innerHTML = parseInt(numero1.value) + parseInt(numero2.value)
+            
+        }
+        function subtracao() {
+            valor.innerHTML = parseInt(numero1.value) - parseInt(numero2.value)
+            
+        }
+        function multiplicacao() {
+            valor.innerHTML = parseInt(numero1.value) * parseInt(numero2.value)
+            
+        }
+        function divisao() {
+            valor.innerHTML = parseInt(numero1.value) / parseInt(numero2.value) 
+            
+        }
+    </script>
+
+</body>
+<footer>
+    <img src="images/img01.jpeg" style="width: 25vw; min-width: 140px;">
+</footer>
+</html>
